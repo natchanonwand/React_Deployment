@@ -1,0 +1,23 @@
+.ExportButton{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 2px #15ff00;
+    color: #15ff00;
+    border-radius: 10px;
+    border: solid 2px  #15ff00;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    width: 5rem;
+}
+
+.ExportButton:hover {
+    color: black;
+    background-color: #15ff00;
+    box-shadow: 0px 0px 18px #15ff00;
+    transition: background-color 0.3s ease;
+    font-weight: 530;
+}

@@ -1,0 +1,130 @@
+.Details {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.wrapDetail{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.Details h2{
+    border: solid 1px #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.Barr {
+    background-color: rgba(18, 18, 18, 0.9);
+    height: 60px; /* Adjust the height to your preferred thickness */
+    padding: 0; /* Remove padding or set it to 0 */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; /* Center vertically */
+}
+
+.centered-Details {
+    color: #fff;
+    font-size: 20px;
+    text-align: flex-start ;
+    width: 100%;
+    margin-left: 4%;
+    text-shadow: 1px 1px 0px #a19f9f;
+}
+
+
+.List-details {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 8px #ddd;
+    border-radius: 10px;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    margin:0.3em;
+    height: 85.5%;
+    gap: 5px;
+}
+
+
+.left-column {
+    flex: 1;
+}
+
+.judgement-column{
+    flex: 0.2;
+}
+
+.detail-item{
+    height: 31%;
+    border-bottom: 1px solid #000;
+    font-size: large;
+}
+
+.details-column {
+    text-decoration: none;
+    color: black;
+    flex: 1;
+    padding: 0px 2px;
+    width: 50%;
+}
+
+/* .MainContent.shifted .paginat {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    transition: 1s;
+}
+
+.MainContent .paginat {
+    height: 40px;
+    width: calc(100% - 150px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    transition: 1s;
+} */
+.paginat {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    z-index: 999;
+    transition: 1s;
+}
+
+.paginat span {
+  color: #ffffff;
+  font-size: large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.paginat button {
+  margin: 8px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%; 
+  background-color:  rgba(18, 18, 18, 0.9);
+  padding: 0; 
+  outline: none; 
+} 
+
+.paginat button:disabled {
+    cursor: not-allowed; /* Change cursor when disabled */
+  }

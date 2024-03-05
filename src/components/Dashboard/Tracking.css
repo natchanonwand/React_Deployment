@@ -1,0 +1,29 @@
+.blink {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 100px;
+    margin: 20px;
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+  
+  @keyframes blink {
+    50% {opacity: 0;}
+}
+
+.centered-Dash {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    text-align: flex-start ;
+    width: 100%;
+    margin-left: 3%;
+    text-shadow: 1px 1px 0px #a19f9f;
+}
+
+.boxes h2{
+    color: blue;
+}

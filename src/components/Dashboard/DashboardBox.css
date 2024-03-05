@@ -1,0 +1,15 @@
+    .dashboard-box{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dashboard-box p{
+        font-size: 40px;
+        font-weight: bold;
+        color: rgb(52, 147, 69);
+    }
+    
+    .dashboard-box h3{
+        color: #000
+    }

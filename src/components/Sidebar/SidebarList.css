@@ -1,0 +1,108 @@
+.SidebarList {
+    height: auto;
+    padding: 0;
+    width: 95%;
+    text-shadow: 1px 1px 0px #6d6d6d;
+    display: block;
+}
+
+
+.SidebarList .row {
+    overflow-x: hidden;
+    text-decoration: none;
+    height: 65px;
+    width: 100%;
+    border: none;
+    margin-top: 1vw;
+    color: rgb(242, 240, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    transition: 0.3s;
+}
+
+.SidebarList .row:hover {
+    color: rgb(0, 110, 255);
+    text-shadow: 0px 0px 20px rgb(0, 38, 255);  
+    transition: background-color 0.3s ease;
+}
+
+.SidebarList .row.active {
+    background-color: rgba(27, 105, 239, 0.079);
+    cursor: pointer;
+    border-top-right-radius: 10vw;
+    border-bottom-right-radius: 10vw;
+    color: rgb(194, 218, 255);
+    text-shadow: none;
+    box-shadow: 0 0 1px #fff,
+    0 0 7px rgb(0, 98, 255),
+    0 0 10px rgb(0, 81, 255),
+    0 0 14px rgb(0, 60, 255);
+    text-decoration: none;
+    transition: 1s ease;
+}
+
+.row #icon{
+    display: flex;
+    flex: 2;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+
+.row #title{
+    font-size: large;
+    text-size-adjust: auto;
+    flex:7 ;
+    text-decoration: none;
+}
+
+
+.BottomTabs {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transition: 0.3s;
+    overflow-x: hidden;
+}
+
+.BottomTabs .rowBottom {
+    text-decoration: none;
+    height: 65px;
+    width: 100%;
+    border: none;
+    list-style-type: none;
+    margin: 0;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.BottomTabs .rowBottom:hover {
+    color: rgb(23, 92, 241);
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    text-shadow: none;
+    text-shadow: 0 0 1px #fff,
+    0 0 7px rgb(0, 98, 255);
+}
+
+.BottomTabs #icon{
+    text-size-adjust: auto;
+    flex: 30%;
+    display: grid;
+    place-items: center;
+}
+
+.BottomTabs #title{
+    font-size: 15px;
+    text-size-adjust: auto;
+    flex:7 ;
+    text-decoration: none;
+    place-items: center;
+}

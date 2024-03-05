@@ -1,0 +1,154 @@
+.SearchbarH {
+    width: 30%;
+    margin-right: 50px;
+}
+
+.History {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.wrapHis{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.Bar {
+    background-color: rgba(18, 18, 18, 0.9);
+    height: 60px; /* Adjust the height to your preferred thickness */
+    padding: 0; /* Remove padding or set it to 0 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    overflow-x: hidden;
+    width: 100%;
+    }
+
+.centered-H {
+    color: #fff;
+    font-size: 20px;
+    text-align: center ;
+    width: 100%;
+    text-shadow: 1px 1px 0px #a19f9f;
+    margin-right:10%;
+    margin-left: 20%;
+    transition: 1s;
+}
+
+/* .MainContent.shifted .centered-H{
+    color: #fff;
+    font-size: 20px;
+    text-align: center ;
+    width: 100%;
+    text-shadow: 1px 1px 0px #a19f9f;
+    margin-right:10%;
+    margin-left: 50px;
+    transition: 1s;
+} */
+
+.History .List-bar{
+    width: 100%;
+    height: 98%;
+    object-fit: cover;
+    margin-left: auto; 
+    display: block; 
+    margin: 3px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 45%;
+    position:static;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.container .SearchButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 2rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #000000;
+    margin-left: 5px;
+    border-radius: 55px;
+    background-color: rgb(13, 255, 0);
+    border-radius: 10px;
+    border: none;
+} 
+
+.container .SearchButton:hover{
+    background-color: rgb(13, 255, 0);
+    color: #e8e6e6;
+    box-shadow: 0px 0px 15px rgb(13, 255, 0);
+}
+
+.Export{
+    width: 10%;
+    margin-right: 10px;
+}
+.container .calendar{
+    display: flex;
+    align-items: center;
+    width: 15rem;
+    height: 2rem;
+    margin-right: 0px;
+    padding: 0px;
+    cursor: text;
+    font-size: 0.9rem;
+    box-shadow: 0px 0px 8px #818181;
+    background-image: whitesmoke;
+    border-radius: 10px;
+    border: none;
+    transition: background-image 2.5s;
+}
+
+.container .calendar.open {
+    box-shadow: none;
+}
+
+.container .calendar.open:active {
+    box-shadow: none;
+}
+
+
+.container .calendar:hover{
+    color: black;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 15px whitesmoke;
+    transition: background-color 0.3s ease;
+}
+
+.container .date-range-text {
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.container .icon{
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 5px;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+.container .dateRange{
+    z-index: 9999;
+    position: absolute;
+    top: 65px;
+    box-shadow: 0px 0px 5px #000000;
+  }
+
+
+

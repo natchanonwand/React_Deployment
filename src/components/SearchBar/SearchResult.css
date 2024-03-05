@@ -1,0 +1,27 @@
+.search-result{
+    display: flex;
+    padding: 10px 15px;
+    cursor: pointer;
+    height: 6%;
+    border-bottom: 1px solid #ddd;
+    margin:0.3em;
+}
+
+.search-result .textinthebox{
+  font-size: large;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+.search-result:hover{
+    background-color: rgba(0, 0, 255, 0.196);
+    border-radius: 1vw;
+    transition: background-color 0.3s ease;
+}
+
+  
+
+  
