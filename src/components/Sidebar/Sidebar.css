@@ -1,12 +1,13 @@
 .Sidebar {
   height: 100%;
-  width: 150px; /* Initial width */
+  width: 150px; 
   background-color: rgba(18, 18, 18, 0.967);
   position: relative;
   top: 0;
   left: 0;
-  transition: width 1s; /* Apply transition to width */
+  transition: width 1s;
   z-index: 999;
+  list-style-type: none;
 }
 
 .Sidebar.closed {
@@ -82,7 +83,7 @@
 } */
 
 .SidebarList {
-  list-style-type: none; /* Remove bullet points */
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
 }
