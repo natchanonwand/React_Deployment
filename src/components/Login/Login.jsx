@@ -71,16 +71,17 @@ const Login = () => {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
+          justifyContent: 'center',
           backgroundImage: `url(${galaxyImage})`, 
           backgroundSize: 'cover', 
           backgroundPosition: 'center', 
           }}>
         <Box
           sx={{
-            marginTop: 20,
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
+            justifyContent:'center',
             width: '50vw',
             border: '1px solid #ddd',
             borderRadius: '50px',
@@ -88,18 +89,26 @@ const Login = () => {
           }}
         >
           
-          <AccountCircleIcon sx={{ mt: 5, color: 'primary.main', height: '80px', width: '80px' }}/>
+          <AccountCircleIcon sx={{ mt: 5, color: 'primary.main', height: '5vw', width: '5vw' }}/>
          
           <Typography 
           component="h1" 
           variant="h5" 
           sx={{
-            fontSize:'50px',
+            fontSize:'5vw',
             fontFamily: 'monospace'
             }}>
             Login
           </Typography>
-          <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
+          <Box component="form" 
+          onSubmit={handleSubmit} 
+          noValidate
+          sx={{ 
+            mt: 1 ,
+            display: 'flex',
+            flexDirection: 'column',
+            width: '40vw',
+            }}>
             <TextField
               margin="normal"
               required
@@ -140,9 +149,9 @@ const Login = () => {
             />
             <Button
               type="submit"
-              fullWidth
               variant="contained"
               sx={{
+                width: '100%',
                 mt: 3, 
                 mb: 5, 
                 bgcolor: 'primary.main', 

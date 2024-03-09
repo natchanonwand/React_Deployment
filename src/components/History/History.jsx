@@ -79,11 +79,11 @@ const History = () => {
           <div className='wrapHis'>
                 {/* Top bar components */}
                 <div className="Bar">
-                    <div style={{display:'flex'}}>
+                    <div style={{display:'flex', width:'20vw'}}>
                       <h1 className='centered-H'>History</h1>
                       <Dropdown setSelectedBusiness={setSelectedBusiness} /> {/* Pass setSelectedBusiness to Dropdown */}
                     </div>
-                    <div style={{display:'flex', justifyContent:'flex-end', width:'50%'}}>
+                    <div style={{display:'flex', justifyContent:'flex-end', width:'45vw'}}>
                       <div className='Export'>
                         <CSV/>
                       </div>
