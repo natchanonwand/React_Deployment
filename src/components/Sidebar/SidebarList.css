@@ -59,6 +59,7 @@
     text-size-adjust: auto;
     flex:7 ;
     text-decoration: none;
+    list-style-type: none; 
 }
 
 
