@@ -87,3 +87,15 @@
   padding: 0; 
   margin: 0; 
 }
+
+.SidebarList::before {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+.SidebarList::after {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+}
