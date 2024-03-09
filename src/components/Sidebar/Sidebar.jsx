@@ -47,7 +47,7 @@ const Sidebar = () => {
                 <ul> {/* Wrap the first list in a <ul> element */}
                     {SidebarData.map((val, key) => {
                         return (
-                            <li key={key}>
+                            <li style={{listStyleType:'none'}} key={key}>
                                 <NavLink
                                     to={val.path}
                                     className={['row', activeItem === key ? 'active' : null].join(' ')}
@@ -63,7 +63,7 @@ const Sidebar = () => {
                     <ul> {/* Wrap the second list in a <ul> element */}
                         {SidebarData2.map((val, key) => {
                             return (
-                                <li key={key}>
+                                <li style={{listStyleType:'none'}} key={key}>
                                     <NavLink to={val.path} className={({ isactive }) => ["rowBottom", isactive ? "active" : null].join("")}>
                                         <div id="icon">{val.icon}</div> <div id="title">{val.title}</div>
                                     </NavLink>
