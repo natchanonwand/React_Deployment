@@ -18,8 +18,8 @@ const DashboardBox = ({ Machine_ID, Direction }) => {
     // Fetch data initially
     fetchData();
 
-    // Fetch data every 5 seconds
-    const intervalId = setInterval(fetchData, 5000);
+    // Fetch data every 30 seconds
+    const intervalId = setInterval(fetchData, 30000);
 
     // Clean up the interval when the component unmounts
     return () => clearInterval(intervalId);
@@ -34,7 +34,7 @@ const DashboardBox = ({ Machine_ID, Direction }) => {
       )}
       {data ? (
         <div>
-          <p>{data.Good}</p>
+          <p>{data.TTL}</p>
           <p style={{fontSize:'15px' , fontWeight:'bold' , color: 'black'}}>{data.Lot_id}</p>
         </div>
       ) : (

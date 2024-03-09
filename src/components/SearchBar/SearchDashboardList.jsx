@@ -12,7 +12,7 @@ export const SearchDashboardList = ({ results }) => {
   }, [lot_Data]);
 
   const handleResultClick = (Lot_id) => {
-    // Handle click action, for example, navigate to a specific route
+    // Handle click action navigate to /Dashboard/${Lot_id}
     navigate(`/Dashboard/${Lot_id}`);
     setLot_Data(Lot_id);
     setIsVisible(false); // Hide the component after click

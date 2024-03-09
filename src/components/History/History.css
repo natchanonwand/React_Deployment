@@ -111,6 +111,7 @@
     border-radius: 10px;
     border: none;
     transition: background-image 2.5s;
+    color: #000000;
 }
 
 .container .calendar.open {

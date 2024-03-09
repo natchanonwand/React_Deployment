@@ -44,7 +44,7 @@ export const SearchDetails = () => {
         const intervalId = setInterval(() => {
             fetchCountRecordsCountTray();
             fetchCountRecords();
-        }, 5000); // Fetch data every 5 seconds (adjust as needed)
+        }, 60000); // Fetch data every 60 seconds 
     
         return () => {
             clearInterval(intervalId); // Clean up the interval on component unmount

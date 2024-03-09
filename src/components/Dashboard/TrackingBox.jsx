@@ -35,7 +35,7 @@ const TrackingBox = ({ Machine_ID, Direction, lot_Data }) => {
       )}
       {data ? (
         <div>
-          <p>{data.Good}</p>
+          <p>{data.TTL}</p>
         </div>
       ) : (
         <p>-</p>
