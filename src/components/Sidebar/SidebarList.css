@@ -21,7 +21,6 @@
     justify-content: center;
     align-items: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    list-style-type: none; 
     transition: 0.3s;
 }
 
@@ -59,7 +58,6 @@
     text-size-adjust: auto;
     flex:7 ;
     text-decoration: none;
-    list-style-type: none; 
 }
 
 
