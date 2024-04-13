@@ -10,6 +10,8 @@ import History from './components/History/History';
 import Logout from './components/Login/Logout.jsx';
 import {SearchDetails} from './components/SearchBar/SearchDetails'
 import Tracking from './components/Dashboard/Tracking';
+import Setting from './components/Setting/Setting.jsx';
+
 
 function App() {
   return (
@@ -24,6 +26,7 @@ function App() {
             <Route path="/Logout" element={<Logout />} />
             <Route path='/SearchDetails/:lotData'element={<SearchDetails />}/>
             <Route path='/Dashboard/:lot_Data/*'element={<Tracking />}/>
+            <Route path="/Setting" element={<Setting />}/>
           </Route>
           {/* Redirect to login if no other routes match */}
           <Route path="*" element={<Login />} />

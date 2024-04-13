@@ -96,7 +96,8 @@ const Login = () => {
           variant="h5" 
           sx={{
             fontSize:'5vw',
-            fontFamily: 'monospace'
+            fontFamily: 'sans-serif', 
+            fontWeight: 'bold'
             }}>
             Login
           </Typography>

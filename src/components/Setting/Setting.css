@@ -1,0 +1,29 @@
+.DecisionButton{
+    height: 80%;
+    width: 40%;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    box-shadow:  20px 20px 60px #ababab,
+                -20px -20px 60px #ffffff;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: x-large;
+    font-weight: bold;
+    overflow: hidden; 
+    display: inline-block;
+}
+
+.DecisionButton:hover{
+    box-shadow:  10px 10px 30px #ababab,
+                -10px -10px 30px #ffffff;
+}
+
+.DecisionButton span{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.DecisionButton:hover span {
+    transform: scale(1.1); 
+    display: inline-block; 
+}

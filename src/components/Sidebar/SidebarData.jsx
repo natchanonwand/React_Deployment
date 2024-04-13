@@ -3,6 +3,7 @@ import "./Sidebar.css";
 import HomeIcon from '@mui/icons-material/Home';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import HistoryIcon from '@mui/icons-material/History';
+import SettingsIcon from '@mui/icons-material/Settings';
 import LogoutIcon from '@mui/icons-material/Logout';
 
 export const SidebarData = [
@@ -20,6 +21,11 @@ export const SidebarData = [
         title:"History",
         icon:<HistoryIcon style={{ fontSize: '20px' }}/>,
         path:"/History"
+    },
+    {
+        title:"Setting",
+        icon:<SettingsIcon style={{ fontSize: '20px' }}/>,
+        path:"/Setting"
     }
 ];
 

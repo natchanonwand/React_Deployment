@@ -9,6 +9,8 @@ import DashboardComponent from "../Dashboard/DashboardComponent.jsx";
 import Logout from "../Login/Logout.jsx"; 
 import { SearchDetails }  from "../SearchBar/SearchDetails.jsx"
 import Tracking from "../Dashboard/Tracking.jsx";
+import Setting  from "../Setting/Setting.jsx"
+
 
 const Sidebar = () => {
     const [activeItem, setActiveItem] = useState(null);
@@ -33,9 +35,9 @@ const Sidebar = () => {
                 <Route path="/Dashboard" element={<DashboardComponent />} />
                 <Route path="/History" element={<History />} />
                 <Route path="/Logout" element={<Logout />} />
-                <Route path='/SearchDetails/:lotData'element={<SearchDetails />}/>
-                <Route path='/Dashboard/:lot_Data'element={<Tracking />}/>
-
+                <Route path="/SearchDetails/:lotData"element={<SearchDetails />}/>
+                <Route path="/Dashboard/:lot_Data"element={<Tracking />}/>
+                <Route path="/Setting" element={<Setting />}/>
             </Routes>
         </div>
         <div className={`Sidebar ${isOpen ? 'closed' : 'open'}`}>

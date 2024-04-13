@@ -36,11 +36,12 @@
   margin-left: 0px; /* Adjust margin-left when Sidebar is closed */
   color: whitesmoke;
   mix-blend-mode: difference;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 .Sidebar .close-btn:hover {
   color: white;
-  text-shadow: 0px 0px 10px white;
+  text-shadow: 0px 0px 10px rgb(200, 200, 200);
 }
 
 .Sidebar::after {
