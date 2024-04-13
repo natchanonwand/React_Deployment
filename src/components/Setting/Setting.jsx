@@ -235,8 +235,8 @@ const Setting = () => {
                                                             style={{ border: '1px solid black', borderTopLeftRadius: '10px', borderBottomLeftRadius: '10px', borderRight: 'none', height: '100%', paddingLeft: '10px' }}
                                                         />
                                                         <button onClick={() => handleUpdateStation(station.Machine_ID)} style={{ height: '104%', width: '20%', border: '1px solid black', borderRight: 'none', cursor: 'pointer', backgroundColor: '#fff04d', fontWeight: 'bold' }}>Update</button>
-                                                        <button onClick={() => handleDeleteStation(station.Machine_ID)} style={{ height: '104%', width: '20%', border: '1px solid black', borderRight: 'none', cursor: 'pointer', backgroundColor: '#e57373', fontWeight: 'bold' }}>Delete</button>
-                                                        <button onClick={handleCloseEditStation} style={{ height: '104%', width: '20%', border: '1px solid black', borderTopRightRadius: '10px', borderBottomRightRadius: '10px', cursor: 'pointer', backgroundColor: '#ff7a7a', fontWeight: 'bold', marginRight: '10px' }}>Cancel</button>
+                                                        <button onClick={() => handleDeleteStation(station.Machine_ID)} style={{ height: '104%', width: '20%', border: '1px solid black', borderRight: 'none', cursor: 'pointer', backgroundColor: '#ff7a7a', fontWeight: 'bold' }}>Delete</button>
+                                                        <button onClick={handleCloseEditStation} style={{ height: '104%', width: '20%', border: '1px solid black', borderTopRightRadius: '10px', borderBottomRightRadius: '10px', cursor: 'pointer', backgroundColor: '#ffae52', fontWeight: 'bold', marginRight: '10px' }}>Cancel</button>
                                                     </div>
                                                 
                                                 )}
