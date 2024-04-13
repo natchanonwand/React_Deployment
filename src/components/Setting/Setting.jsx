@@ -236,7 +236,7 @@ const Setting = () => {
                                                         />
                                                         <button onClick={() => handleUpdateStation(station.Machine_ID)} style={{ height: '104%', width: '20%', border: '1px solid black', borderRight: 'none', cursor: 'pointer', backgroundColor: '#fff04d', fontWeight: 'bold' }}>Update</button>
                                                         <button onClick={() => handleDeleteStation(station.Machine_ID)} style={{ height: '104%', width: '20%', border: '1px solid black', borderRight: 'none', cursor: 'pointer', backgroundColor: '#ff7a7a', fontWeight: 'bold' }}>Delete</button>
-                                                        <button onClick={handleCloseEditStation} style={{ height: '104%', width: '20%', border: '1px solid black', borderTopRightRadius: '10px', borderBottomRightRadius: '10px', cursor: 'pointer', backgroundColor: '#ffae52', fontWeight: 'bold', marginRight: '10px' }}>Cancel</button>
+                                                        <button onClick={handleCloseEditStation} style={{ height: '104%', width: '20%', border: '1px solid black', borderTopRightRadius: '10px', borderBottomRightRadius: '10px', cursor: 'pointer', backgroundColor: '#fdb4b4', fontWeight: 'bold', marginRight: '10px' }}>Cancel</button>
                                                     </div>
                                                 
                                                 )}
