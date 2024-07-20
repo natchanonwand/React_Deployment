@@ -8,7 +8,7 @@ function CSV() {
     const { lotData } = useParams();
 
     const fetchAndExport = () => {
-        let apiUrl = 'https://weak-red-pigeon-shoe.cyclic.app/api/countrecords_counttray';
+        let apiUrl = 'http://localhost:3334/api/countrecords_counttray';
         if (lotData) {
             apiUrl += `/${lotData}`;
         }

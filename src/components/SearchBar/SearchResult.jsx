@@ -13,7 +13,7 @@ export const SearchResult = ({ result }) => {
   }, [lotData, showDetails]);
 
   const handleResultClick = () => {
-    fetch(`https://weak-red-pigeon-shoe.cyclic.app/api/countrecords_counttray/${result.Lot_id}`)
+    fetch(`http://localhost:3334/api/countrecords_counttray/${result.Lot_id}`)
       .then((response) => response.json())
       .then((data) => {
         console.log("Fetched Data:", data);

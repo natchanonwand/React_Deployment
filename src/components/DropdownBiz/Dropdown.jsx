@@ -6,7 +6,7 @@ const Dropdown = ({ setSelectedBusiness }) => {
   const [selected, setSelected] = useState(localStorage.getItem("selectedBusiness") || "");
 
   useEffect(() => {
-    fetch("https://weak-red-pigeon-shoe.cyclic.app/api/business") 
+    fetch("http://localhost:3334/api/business") 
       .then((response) => response.json())
       .then((data) => {
         setBusinesses(data);

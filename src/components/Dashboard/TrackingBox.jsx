@@ -6,7 +6,7 @@ const TrackingBox = ({ Machine_ID, Direction, lot_Data }) => {
 
   const fetchData = useCallback(async () => {
     try {
-      const response = await fetch(`https://weak-red-pigeon-shoe.cyclic.app/api/countrecords_counttray/Position/${Machine_ID}/${Direction}/${lot_Data}`);
+      const response = await fetch(`http://localhost:3334/api/countrecords_counttray/Position/${Machine_ID}/${Direction}/${lot_Data}`);
       const jsonData = await response.json();
       setData(jsonData);
       console.log('path', lot_Data);

@@ -15,7 +15,7 @@ export const SearchDetails = () => {
 
     useEffect(() => {
         const fetchCountRecordsCountTray = () => {
-            fetch(`https://weak-red-pigeon-shoe.cyclic.app/api/countrecords_counttray/${lotData}`)
+            fetch(`http://localhost:3334/api/countrecords_counttray/${lotData}`)
                 .then(response => response.json())
                 .then(data => {
                     setDetails(data); 
@@ -27,7 +27,7 @@ export const SearchDetails = () => {
         };
     
         const fetchCountRecords = () => {
-            fetch(`https://weak-red-pigeon-shoe.cyclic.app/api/countrecords/${lotData}`)
+            fetch(`http://localhost:3334/api/countrecords/${lotData}`)
                 .then(response => response.json())
                 .then(data => {
                     setAxisData(data); 

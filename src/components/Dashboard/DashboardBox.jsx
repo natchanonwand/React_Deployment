@@ -7,7 +7,7 @@ const DashboardBox = ({ Machine_ID, Direction }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`https://weak-red-pigeon-shoe.cyclic.app/api/countrecords_counttray/Position/${Machine_ID}/${Direction}/`);
+        const response = await fetch(`http://localhost:3334/api/countrecords_counttray/Position/${Machine_ID}/${Direction}/`);
         const jsonData = await response.json();
         setData(jsonData);
       } catch (error) {

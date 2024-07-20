@@ -9,7 +9,7 @@ export const SearchBar = ({ setResults, selectedBusiness }) => {
         // Fetch data using selectedBusiness
         if (selectedBusiness) {
             // Fetch data using selectedBusiness
-            fetch(`https://weak-red-pigeon-shoe.cyclic.app/api/business/countrecords_counttray/${selectedBusiness}`)
+            fetch(`http://localhost:3334/api/business/countrecords_counttray/${selectedBusiness}`)
             .then((response) => response.json())
             .then((json) =>{
                 const results = json.filter((Count) => {

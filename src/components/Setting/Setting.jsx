@@ -20,7 +20,7 @@ const Setting = () => {
 
     const fetchBusinesses = async () => {
         try {
-            const response = await axios.get('https://weak-red-pigeon-shoe.cyclic.app/api/business');
+            const response = await axios.get('http://localhost:3334/api/business');
             setBusinesses(response.data);
         } catch (error) {
             console.error("Failed to fetch businesses:", error);
@@ -29,7 +29,7 @@ const Setting = () => {
 
     const fetchStationsForBusiness = async (businessId) => {
         try {
-            const response = await axios.get(`https://weak-red-pigeon-shoe.cyclic.app/api/station?business_id=${businessId}`);
+            const response = await axios.get(`http://localhost:3334/api/station?business_id=${businessId}`);
             setStations(prevState => ({
                 ...prevState,
                 [businessId]: response.data.sort((a, b) => a.Machine_name.localeCompare(b.Machine_name))
@@ -55,7 +55,7 @@ const Setting = () => {
             return;
         }
         try {
-            await axios.put(`https://weak-red-pigeon-shoe.cyclic.app/api/business/${businessId}`, {
+            await axios.put(`http://localhost:3334/api/business/${businessId}`, {
                 Business_name: newBusinessName,
             });
             setBusinesses(businesses.map(business => business.Business_id === businessId ? { ...business, Business_name: newBusinessName } : business));
@@ -71,7 +71,7 @@ const Setting = () => {
             return;
         }
         try {
-            await axios.put(`https://weak-red-pigeon-shoe.cyclic.app/api/station/${editingStationId}`, {
+            await axios.put(`http://localhost:3334/api/station/${editingStationId}`, {
                 Machine_name: newStationName,
             });
             fetchStationsForBusiness(editingBusinessId);
@@ -104,7 +104,7 @@ const Setting = () => {
         }
     
         try {
-            const response = await axios.post('https://weak-red-pigeon-shoe.cyclic.app/api/station', {
+            const response = await axios.post('http://localhost:3334/api/station', {
                 Machine_name: newStationName,
                 Business_id: editingBusinessId
             });
@@ -133,7 +133,7 @@ const Setting = () => {
         }
     
         try {
-            const response = await axios.post('https://weak-red-pigeon-shoe.cyclic.app/api/business', {
+            const response = await axios.post('http://localhost:3334/api/business', {
                 Business_name: newBusinessName,
             });
     
@@ -154,7 +154,7 @@ const Setting = () => {
         }
     
         try {
-            const response = await axios.delete(`https://weak-red-pigeon-shoe.cyclic.app/api/station/${machineId}`);
+            const response = await axios.delete(`http://localhost:3334/api/station/${machineId}`);
             if (response.status === 200) {
                 alert("Station deleted successfully");
                 // Remove the deleted station from the local state to update UI

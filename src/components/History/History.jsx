@@ -48,7 +48,7 @@ const History = () => {
       try {
           const formattedStartDate = date.startDate.toISOString().replace(/\.\d+Z/, '').replace('T', ' ');
           const formattedEndDate = date.endDate.toISOString().replace(/\.\d+Z/, '').replace('T', ' ');
-          const response = await fetch(`https://weak-red-pigeon-shoe.cyclic.app/api/countrecords_counttray/${selectedBusiness}/datetime_range/${formattedStartDate}/${formattedEndDate}`);
+          const response = await fetch(`http://localhost:3334/api/countrecords_counttray/${selectedBusiness}/datetime_range/${formattedStartDate}/${formattedEndDate}`);
           if (!response.ok) {
               throw new Error('Failed to fetch data');
           }
